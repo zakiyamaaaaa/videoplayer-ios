@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		39C40AFA2D5741F300A7B357 /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = 39C40AF92D5741F300A7B357 /* WhisperKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		39C40AD82D522BE700A7B357 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		39C40AC72D522BE300A7B357 /* VideoPlayerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C40AD72D522BE700A7B357 /* VideoPlayerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39C40AE12D522BE700A7B357 /* VideoPlayerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoPlayerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C40B0E2D5DA52900A7B357 /* WhisperKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = WhisperKit; path = ../github/WhisperKit; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C40AFA2D5741F300A7B357 /* WhisperKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +98,7 @@
 				39C40ADA2D522BE700A7B357 /* VideoPlayerAppTests */,
 				39C40AE42D522BE700A7B357 /* VideoPlayerAppUITests */,
 				39C40AC82D522BE300A7B357 /* Products */,
+				39C40B0E2D5DA52900A7B357 /* WhisperKit */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,7 @@
 			);
 			name = VideoPlayerApp;
 			packageProductDependencies = (
+				39C40AF92D5741F300A7B357 /* WhisperKit */,
 			);
 			productName = VideoPlayerApp;
 			productReference = 39C40AC72D522BE300A7B357 /* VideoPlayerApp.app */;
@@ -208,6 +216,9 @@
 			);
 			mainGroup = 39C40ABE2D522BE300A7B357;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				39C40AF82D5741F300A7B357 /* XCRemoteSwiftPackageReference "whisperkit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 39C40AC82D522BE300A7B357 /* Products */;
 			projectDirPath = "";
@@ -579,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39C40AF82D5741F300A7B357 /* XCRemoteSwiftPackageReference "whisperkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/whisperkit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39C40AF92D5741F300A7B357 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C40AF82D5741F300A7B357 /* XCRemoteSwiftPackageReference "whisperkit" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39C40ABF2D522BE300A7B357 /* Project object */;
 }
